@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SFML.Graphics;
-using SFML.Window;
+﻿using SFML.Graphics;
 using SFML.System;
+using SFML.Window;
 
 namespace JustSnake
 {
@@ -24,7 +19,6 @@ namespace JustSnake
 
         Color textColorAddition = new Color(50, 50, 50);
         RectangleShape gameOverBackground;
-        Font font = new Font("Font\\ABeeZee-Regular.otf");
         Text text;
         
 
@@ -32,7 +26,7 @@ namespace JustSnake
         {
             game = gameState;
 
-            text = new Text("Score: 0", font);
+            text = new Text("Score: 0", Resources.Font);
             text.Position = new Vector2f(10, 10);
 
             gameOverBackground = new RectangleShape(
