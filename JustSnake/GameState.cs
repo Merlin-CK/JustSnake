@@ -15,9 +15,9 @@ namespace JustSnake
         public int Rows    { get; private set; }
         public int Columns { get; private set; }
 
-        public int Interval { get; set; }
-        public uint Score { get; private set; } = 0;
-        public bool GameOver { get; private set; } = false;
+        public int Interval   { get; set; }
+        public uint Score     { get; private set; } = 0;
+        public bool GameOver  { get; private set; } = false;
         public string Message { get; private set; } = "Score: 0";
 
         public Vector2i FoodPosition { get; private set; }
@@ -133,7 +133,7 @@ namespace JustSnake
         void SetGameOver()
         {
             GameOver = true;
-            Message += "\n\nGame over!\nPress any key to play again";
+            Message += "\n\nGame over!\nPress space to play again";
         }
     }
 }

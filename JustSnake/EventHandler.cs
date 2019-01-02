@@ -29,8 +29,14 @@ namespace JustSnake
         {
             if (game.GameOver)
             {
-                game.Reset();
-                return;
+                if (e.Code == Keyboard.Key.Space)
+                {
+                    game.Reset();
+                }
+                else
+                {
+                    return;
+                }
             }
 
             switch (e.Code)
